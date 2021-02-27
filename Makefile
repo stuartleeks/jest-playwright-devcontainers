@@ -13,7 +13,7 @@ test: ## run tests
 
 
 test-debug: ## run tests in debug mode
-	DISPLAY=host.docker.internal:0.0 PWDEBUG=1 yarn run jest 
+	PWDEBUG=1 yarn run jest 
 
 record:
-	DISPLAY=host.docker.internal:0.0 yarn playwright codegen ${URL}
+	yarn playwright codegen ${URL}
