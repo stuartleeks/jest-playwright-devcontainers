@@ -1,0 +1,43 @@
+Arguments: 
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js install
+
+PATH: 
+  /home/node/dotfiles/devcontainer/clip:/vscode/vscode-server/bin/x64/622cb03f7e070a9670c94bae1a45d78d7181fbd4/bin:/usr/local/share/npm-global/bin:/usr/local/share/nvm/current/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/node/.local/bin:/home/node/bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  10.24.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, unlink '/workspaces/jest-playwright-devcontainers/node_modules/@babel/compat-data/LICENSE'
+
+npm manifest: 
+  {
+    "dependencies": {
+      "@types/jest": "^26.0.20",
+      "@types/node": "^14.14.31",
+      "jest": "^26.6.3",
+      "jest-playwright-preset": "1.4.7",
+      "playwright": "1.8.1",
+      "ts-jest": "^26.5.1",
+      "typescript": "^4.1.5"
+    },
+    "scripts": {
+      "test": "jest"
+    },
+    "name": "ui-tests",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
