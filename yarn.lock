@@ -3249,7 +3249,7 @@ pkg-dir@^4.1.0, pkg-dir@^4.2.0:
   dependencies:
     find-up "^4.0.0"
 
-playwright-core@>=1.2.0:
+playwright-core@1.9.1, playwright-core@>=1.2.0:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.9.1.tgz#c3b9160f54318f1657e29309df5a5419c5574479"
   integrity sha512-V/i2kMWRaJ+76XTCiR0+dS711V0+JVPNw+YcOiCa0GjGiq3bEhZCFPeHMv++BH4hfC3jFXuD9/XUaw2to6EVcw==
@@ -3268,10 +3268,10 @@ playwright-core@>=1.2.0:
     stack-utils "^2.0.3"
     ws "^7.3.1"
 
-playwright@1.8.1:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/playwright/-/playwright-1.8.1.tgz#0a26035d1b5f2c31d9a4da09d649b4992f989d1e"
-  integrity sha512-nmuiDEDwB/SdAxiZQS5pLqPS3XXN8OJ1LKvTSiAbJvu+AUf7f0RD7nuq9xB0C08Emd6stx9yBMhANvD12k/+GQ==
+playwright@1.9.1:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/playwright/-/playwright-1.9.1.tgz#b4db35f69076b2dc91e347e58d81f2f391d1ed49"
+  integrity sha512-bZXnks4UGJZoqja6TqVEUG0IQ2liqYFcO1R4lT43aO4oDVTQtawEJjS+EqLYsAuniRFWVE87Cemus4fRQbyXMg==
   dependencies:
     commander "^6.1.0"
     debug "^4.1.1"
@@ -3284,6 +3284,7 @@ playwright@1.8.1:
     proper-lockfile "^4.1.1"
     proxy-from-env "^1.1.0"
     rimraf "^3.0.2"
+    stack-utils "^2.0.3"
     ws "^7.3.1"
 
 pngjs@^5.0.0:
