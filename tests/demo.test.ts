@@ -1,22 +1,22 @@
-  
-// Needs to be higher than the default Playwright timeout
-jest.setTimeout(40 * 1000)
+jest.setTimeout(60 * 1000)
 
-describe("GitHub", () => {
-  it("should show the microsoft/Playwright project in the search if you search for Playwright", async () => {
-    await page.goto("https://github.com");
-    await page.type('input[name="q"]', "Playwright");
-    await page.press('input[name="q"]', "Enter");
-    await expect(page).toHaveText(".repo-list", "microsoft/playwright")
-  })
-  it("should contain 'Playwright' in the project title", async () => {
-    await page.click(".repo-list-item:nth-child(1) a");
-    // via the CSS selector
-    await expect(page).toHaveText("#readme h1", "Playwright")
 
-    // or via the Playwright text selector engine
-    await expect(page).toHaveSelector('text=Playwright', {
-      state: "attached"
-    })
-  })
+describe("Finding devcontainer-cli", () => {
+  it("shoud load GitHub", async () => {
+    await page.goto('https://github.com/');
+  });
+
+  it("should run the rest", async() => {
+
+    await page.fill('[placeholder="Search GitHub"]', 'devcontainer-cli');
+
+    await page.press('[placeholder="Search GitHub"]', 'Enter');
+
+    await page.click('text=stuartleeks/devcontainer-cli');
+    await expect(page.url()).toBe('https://github.com/stuartleeks/devcontainer-cli');
+
+    await page.click('#readme >> text=devcontainer-cli');
+
+    await expect(page).toHaveSelector('#readme >> text=devcontainer-cli');
+  });
 })
