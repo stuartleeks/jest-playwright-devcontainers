@@ -15,5 +15,5 @@ test: ## run tests
 test-debug: ## run tests in debug mode
 	PWDEBUG=1 yarn run jest 
 
-record:
+record: ## record a test
 	yarn playwright codegen ${URL}
