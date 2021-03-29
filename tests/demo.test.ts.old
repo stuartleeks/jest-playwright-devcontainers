@@ -1,4 +1,4 @@
-jest.setTimeout(60 * 1000)
+jest.setTimeout(120 * 1000)
 
 
 describe("Finding devcontainer-cli", () => {
